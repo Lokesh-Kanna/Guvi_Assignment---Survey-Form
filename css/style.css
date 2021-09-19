@@ -1,0 +1,93 @@
+.red {
+    color: red;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#email {
+    width: 515px;
+}
+
+/* Star rating properties start */
+
+.rating {
+    transform: translate(-85%, 0%) rotateY(180deg);
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label {
+    width: 20px;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\f005";
+    font-family: "fontAwesome";
+    font-size: 20px;
+    color:rgb(88, 87, 87)
+}
+
+.rating label:after {
+    content: "\f005";
+    font-family: "fontAwesome";
+    position: relative;
+    left: -19px;
+    font-size: 20px;
+    color:rgb(230, 176, 28);
+    opacity: 0;
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+    opacity: 1;
+}
+
+/* Star rating properties end */
+
+th {
+    font-weight: normal;
+    padding: 2px 30px;
+    font-family: 'Times New Roman', 'Times';
+}
+
+.td {
+    text-align: center;
+}
+.table1-rowhead {
+    padding-left: 10px;
+    font-family: 'Times New Roman', 'Times';
+}
+
+.table2-rowhead {
+    padding-left: 10px;
+    font-family: 'Times New Roman', 'Times';
+}
+
+.feedback tr:nth-child(even){
+    background-color: rgb(236, 235, 235);
+}
+
+button {
+    background-color: rgb(236, 235, 235);
+    padding: 10px;
+    margin-bottom: 150px;
+    font-family: 'Times New Roman', 'Times';
+    color: rgb(88, 87, 87);
+}
+
+@media screen and (max-width: 600px){
+    .rating {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 992px){
+    .rating {
+        margin-left: 30px;
+    }
+}
